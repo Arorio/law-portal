@@ -3,6 +3,8 @@ $(function() {
 
   var gridLineColor = 'rgba(77, 138, 240, .1)';
 
+  let dashboardMainColor = '#1653ff';
+
   var colors = {
     primary: '#727cf5',
     secondary: '#7987a1',
@@ -540,7 +542,7 @@ $(function() {
       markers: {
         size: 0,
       },
-      colors: ['#727cf5'],
+      colors: [dashboardMainColor],
       tooltip: {
         fixed: {
           enabled: !1,
@@ -579,7 +581,7 @@ $(function() {
           columnWidth: '60%',
         },
       },
-      colors: ['#727cf5'],
+      colors: [dashboardMainColor],
       series: [
         {
           data: [36, 77, 52, 90, 74, 35, 55, 23, 47, 10, 63],
@@ -636,7 +638,7 @@ $(function() {
       markers: {
         size: 0,
       },
-      colors: ['#727cf5'],
+      colors: [dashboardMainColor],
       tooltip: {
         fixed: {
           enabled: !1,
@@ -675,7 +677,7 @@ $(function() {
           columnWidth: '60%',
         },
       },
-      colors: ['#727cf5'],
+      colors: [dashboardMainColor],
       series: [
         {
           data: [36, 77, 52, 90, 74, 35, 55, 23, 47, 10, 63],
