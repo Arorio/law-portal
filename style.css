@@ -1,3 +1,7 @@
 .flex {
   display: flex;
 }
+
+.page-container {
+  padding: 0;
+}
