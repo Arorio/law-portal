@@ -34,7 +34,7 @@
   <div class='spinner-grow text-primary' role='status'> <span class='sr-only'>Loading...</span></div>
 </div> -->
   <div class="page-container">
-    <div class="page-content" style="margin-top: 5px; margin-left: 5px">
+    <div class="page-content" style="margin-top: 5px; margin-left: 5px; margin-right: 25px">
       <div class="main-wrapper">
         <div class="row">
           <div class="col-12 col-xl-12 stretch-card">
@@ -64,7 +64,7 @@
                       </div>
                     </div>
                     <div class="row">
-                    <div class="col-6 col-md-12 col-xl-8" style="display: inline;">
+                    <div class="col-6 col-md-12 col-xl-6" style="display: inline;">
                       <h3 class="mb-2 flex">58
                         <span class="d-flex align-items-baseline" style="font-size: 14px; line-height: 33px;margin-left: 8px;">
                           个
@@ -74,7 +74,7 @@
                         即将到期 3 个 &nbsp; 更新 43 个 <br /> 待发布 12 个
                         </div>
                         </div>
-                      <div class="col-6 col-md-12 col-xl-4">
+                      <div class="col-6 col-md-12 col-xl-6">
                         <div id="apexChart1" class="mt-md-3 mt-xl-0"></div>
                       </div>
                     </div>
@@ -106,21 +106,21 @@
                       </div>
                     </div>
                     <div class="row">
-                      <div class="col-6 col-md-12 col-xl-7">
+                      <div class="col-6 col-md-12 col-xl-6">
                         <h3 class="mb-2 flex">65
                           <span class="d-flex align-items-baseline" style="font-size: 14px; line-height: 33px;margin-left: 8px;">
                             个
                           </span>
                         </h3>
                         <div class="d-flex align-items-baseline">
-                          资信变更 13 个 &nbsp; 管理变更 8 个 <br /> 业务变更 12 个 &nbsp; 法务变更 3 个
+                          资信类 13 个 &nbsp; 管理类 8 个 <br /> 业务类 12 个 &nbsp; 法务类 3 个
                           <!-- <p class="text-success">
                           <span>上报 33 件</span>
                           <i data-feather="arrow-up" class="icon-sm mb-1"></i>
                         </p> -->
                         </div>
                       </div>
-                      <div class="col-6 col-md-12 col-xl-5">
+                      <div class="col-6 col-md-12 col-xl-6">
                         <div id="apexChart2" class="mt-md-3 mt-xl-0"></div>
                       </div>
                     </div>
@@ -316,27 +316,30 @@
                 <div class="card-body">
                   <h5 class="card-title">快捷库查询</h5>
                   <div class="transactions-list inline-flex">
-                    <div class="tr-item">
-                      <div class="tr-company-name">
-                        <div class="tr-icon tr-card-icon tr-card-bg-secondary text-secondary"><i data-feather="anchor"></i></div>
-                        <div class="tr-text"><a href="#">
+                    <a href="https://weapp.eteams.cn/sp/contract/template-library" target="_blank" rel="noopener noreferrer">
+                      <div class="tr-item">
+                        <div class="tr-company-name">
+                          <div class="tr-icon tr-card-icon tr-card-bg-secondary text-secondary"><i data-feather="anchor"></i></div>
+                          <div class="tr-text">
                             <h4>模板库</h4>
-                          </a>
-                          <!-- <p>模板库描述</p> -->
+                      <!-- <p>模板库描述</p> -->
+                      </div>
                         </div>
-                        </div>
-                        </div>
+                      </div>
+                    </a>
+                    <a href="https://weapp.eteams.cn/sp/contract/terms-library" target="_blank" rel="noopener noreferrer">
                         <div class="tr-item">
                           <div class="tr-company-name">
                             <!-- tr-card-bg-secondary -->
-                        <div class="tr-icon tr-card-icon tr-card-bg-secondary text-secondary"><i data-feather="user"></i></div>
-                        <div class="tr-text"><a href="#">
-                            <h4>条款库</h4>
-                          </a>
-                          <!-- <p>条款库描述</p> -->
+                            <div class="tr-icon tr-card-icon tr-card-bg-secondary text-secondary"><i data-feather="user"></i></div>
+                            <div class="tr-text">
+                              <h4>条款库</h4>
+                              <!-- <p>条款库描述</p> -->
+                              </div>
+                              </div>
                         </div>
-                        </div>
-                        </div>
+                    </a>
+
                         </div>
                         <div class="transactions-list inline-flex">
                           <div class="tr-item">
@@ -528,7 +531,7 @@
                                                                                   </div> -->
           </div>
         </div>
-        <div class="row">
+        <div class="row" style="padding-left: 30px">
           <div class="col-md-12 col-lg-8 col-xl-12">
             <div class="card table-widget" style="height: 500px;">
               <div class="card-body">
@@ -538,67 +541,67 @@
                     <thead>
                       <tr>
                         <th scope="col">序号</th>
-                        <th scope="col">诉讼主体</th>
+                        <th scope="col">案件名称</th>
                         <th scope="col">案件编号</th>
-                        <th scope="col">经办人</th>
+                        <th scope="col">经办日期</th>
                         <th scope="col">涉案金额</th>
-                        <th scope="col">诉讼情况</th>
-                        <th scope="col">状态</th>
+                        <th scope="col">纠纷类别</th>
+                        <th scope="col">案件状态</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
                         <th>1</th>
-                        <td>甲公司</td>
-                        <td>2023-01-002</td>
-                        <td>章三</td>
-                        <td>李四律师，北京市某律所</td>
-                        <td>起诉乙公司侵犯商标权</td>
+                        <td>与卢金星金融借款合同纠纷</td>
+                        <td>AJ-JJ-202008060001</td>
+                        <td>2022-08-06</td>
+                        <td>350,000</td>
+                        <td>经济纠纷</td>
                         <td><span class="badge bg-success">上报待处理</span></td>
                       </tr>
                       <tr>
                         <th>2</th>
-                        <td>丙公司</td>
-                        <td>2023-02-002</td>
-                        <td>章四</td>
-                        <td>赵六律师，上海市某律所</td>
-                        <td>被起诉违反合同义务</td>
+                        <td>维森集团和易标公司采购合同纠纷案件</td>
+                        <td>AJ-MM-202008050001</td>
+                        <td>2022-08-05</td>
+                        <td>120,000</td>
+                        <td>买卖纠纷</td>
                         <td><span class="badge bg-danger">诉讼一审</span></td>
                       </tr>
                       <tr>
                         <th>3</th>
-                        <td>丁公司</td>
-                        <td>2023-02-003</td>
-                        <td>章七</td>
-                        <td>孙十律师，苏州市某律所</td>
-                        <td>起诉戊公司侵犯专利权</td>
+                        <td>上海维森服饰集团合同纠纷案件</td>
+                        <td>AJ-JJ-202008020010</td>
+                        <td>2022-07-29</td>
+                        <td>51,200</td>
+                        <td>经济纠纷</td>
                         <td><span class="badge bg-success">确认律师</span></td>
                       </tr>
                       <tr>
                         <th>4</th>
-                        <td>己公司</td>
-                        <td>2023-04-004</td>
-                        <td>章十一</td>
-                        <td>孙十律师，苏州市某律所</td>
-                        <td>被起诉侵犯著作权</td>
+                        <td>上海维森工程设计院合同纠纷案件</td>
+                        <td>AJ-JJ-202008020009</td>
+                        <td>2022-07-29</td>
+                        <td>30,000</td>
+                        <td>经济纠纷</td>
                         <td><span class="badge bg-primary">调解</span></td>
                       </tr>
                       <tr>
                         <th>5</th>
-                        <td>庚公司</td>
-                        <td>2023-05-005</td>
-                        <td>章十一</td>
-                        <td>张十一律师，天津市某律所</td>
-                        <td>起诉辛公司不履行仲裁裁决</td>
+                        <td>陕西维森建工集团合同纠纷案件</td>
+                        <td>AJ-JJ-202008020006</td>
+                        <td>2022-07-29</td>
+                        <td>210,010</td>
+                        <td>经济纠纷</td>
                         <td><span class="badge bg-danger">诉讼二审</span></td>
                       </tr>
                       <tr>
                         <th>6</th>
-                        <td>癸公司</td>
-                        <td>2023-07-007</td>
-                        <td>章十一</td>
-                        <td>周十六律师，南京市某律所</td>
-                        <td>起诉甲乙合伙企业合伙纠纷</td>
+                        <td>上海维森物流集团合同纠纷案件</td>
+                        <td>AJ-JJ-202008020003</td>
+                        <td>2022-07-28</td>
+                        <td>56,200</td>
+                        <td>经济纠纷</td>
                         <td><span class="badge bg-success">结案</span></td>
                       </tr>
                     </tbody>
@@ -608,9 +611,9 @@
             </div>
           </div>
         </div>
-        <div class="row">
+        <div class="row" style="padding-left: 30px;">
           <div class="col-md-12 col-xl-7">
-            <div class="card table-widget" style="height: 48vh;">
+            <div class="card table-widget" style="height: 55vh;">
               <div class="card-body">
                 <h5 class="card-title">律师查询</h5>
                 <div class="table-responsive">
@@ -619,8 +622,8 @@
                       <tr>
                         <th scope="col">名称</th>
                         <th scope="col">编号</th>
-                        <th scope="col">律所</th>
-                        <th scope="col">资质</th>
+                        <th scope="col">职称</th>
+                        <th scope="col">类型</th>
                         <th scope="col">擅长领域</th>
                         <th scope="col">服务次数</th>
                         <th scope="col">服务评价</th>
@@ -628,37 +631,37 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <th scope="row"><img src="../../assets/images/avatars/profile-image.png" alt="">荣冬</th>
-                        <td>110101</td>
-                        <td>燕京</td>
-                        <td><span class="badge bg-info">高级</span></td>
+                        <th scope="row"><img src="../../assets/images/avatars/mjj.png" alt="">马俊杰</th>
+                        <td>8956765473986</td>
+                        <td><span class="badge bg-info">中级</span></td>
+                        <td>专职律师</td>
                         <td>民商事、刑事</td>
                         <td>10</td>
                         <td><span class="badge bg-info">良好</span></td>
                       </tr>
                       <tr>
-                        <th scope="row"><img src="../../assets/images/avatars/profile-image.png" alt="">王杨</th>
-                        <td>310102</td>
-                        <td>青岛</td>
+                        <th scope="row"><img src="../../assets/images/avatars/cx.jpg" alt="">陈啸</th>
+                        <td>7857799843719</td>
                         <td><span class="badge bg-info">中级</span></td>
+                        <td>专职律师</td>
                         <td>知识产权、劳动争议</td>
                         <td>8</td>
                         <td><span class="badge bg-success">一般</span></td>
                       </tr>
                       <tr>
-                        <th scope="row"><img src="../../assets/images/avatars/profile-image.png" alt="">章洁</th>
-                        <td>44003</td>
-                        <td>二得利</td>
+                        <th scope="row"><img src="../../assets/images/avatars/cyc.png" alt="">崔迎春</th>
+                        <td>7857799843719</td>
                         <td><span class="badge bg-danger">初级</span></td>
+                        <td>外聘律师</td>
                         <td>婚姻家庭、保险理赔</td>
                         <td>6</td>
-                        <td><span class="badge bg-danger">较差</span></td>
+                        <td><span class="badge bg-danger">一般</span></td>
                       </tr>
                       <tr>
-                        <th scope="row"><img src="../../assets/images/avatars/profile-image.png" alt="">丁晓</th>
-                        <td>510105</td>
-                        <td>锐欧</td>
+                        <th scope="row"><img src="../../assets/images/avatars/fzx.jpg" alt="">傅志祥</th>
+                        <td>5894958428352</td>
                         <td><span class="badge bg-primary">中级</span></td>
+                        <td>专职律师</td>
                         <td>房地产、建工</td>
                         <td>4</td>
                         <td><span class="badge bg-primary">良好</span></td>
@@ -679,7 +682,7 @@
             </div>
           </div>
           <div class="col-md-12 col-xl-5">
-            <div class="card table-widget" style="height: 48vh;">
+            <div class="card table-widget" style="height: 55vh;">
               <div class="card-body">
                 <h5 class="card-title">合同模板</h5>
                 <div class="table-responsive">
@@ -743,7 +746,7 @@
             </div>
           </div>
         </div>
-        <div class="row">
+        <div class="row" style="padding-left: 30px;">
           <div class="col-md-12 col-xl-7">
             <div class="card table-widget" style="height: 48vh">
               <div class="card-body">
@@ -844,7 +847,7 @@
                       </tr>
                       <tr>
                         <td>审查重大合同</td>
-                        <td>请高级律师审查与C集团的采购合同</td>
+                        <td>审查与C集团的采购合同</td>
                         <td><span class="badge bg-success">已审查</span></td>
                       </tr>
                       <tr>
@@ -1006,7 +1009,7 @@
         // events: 'https://fullcalendar.io/demo-events.json?overload-day'
         events: [
           {
-            "title": "纠纷诉讼",
+            "title": "一号项目一审开庭",
             "start": "2023-07-01"
           },
           {
@@ -1016,7 +1019,7 @@
           },
           {
             "groupId": "999",
-            "title": "合规风险审查会议",
+            "title": "法务周例会",
             "start": "2023-07-10T16:00:00+09:00"
           },
           {
@@ -1025,7 +1028,7 @@
             "start": "2023-07-16T16:00:00+00:00"
           },
           {
-            "title": "法务部月度会议",
+            "title": "法务系统调研会",
             "start": "2023-07-27",
             "end": "2023-07-29"
           },
@@ -1035,21 +1038,25 @@
             "end": "2023-07-19T12:30:00+00:00"
           },
           {
-            "title": "法务部会议",
+            "title": "维森合同诉讼一审开庭",
             "start": "2023-07-21T12:00:00+16:00"
           },
           {
-            "title": "维森集团实地调研",
+            "title": "企业集团合同纠纷调解",
             "start": "2023-07-30T07:00:00+00:00"
           },
           {
-            "url": "http://jincenda.com/",
-            "title": "争端处理",
-            "start": "2023-07-27"
+            // "url": "http://jincenda.com/",
+            "title": "主商标续展",
+            "start": "2023-07-12"
           },
           {
-            "title": "公司高层会议",
-            "start": "2023-07-26T14:30:00+00:00"
+            "title": "闵行项目二审开庭",
+            "start": "2023-07-24T14:30:00+00:00"
+          },
+          {
+            "title": "CMMI证照到期",
+            "start": "2023-07-15T14:30:00+00:00"
           },
         ]
       });
