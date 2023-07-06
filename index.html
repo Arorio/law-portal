@@ -43,7 +43,7 @@
                 <div class="card">
                   <div class="card-body">
                     <div class="d-flex justify-content-between align-items-baseline">
-                      <h6 class="card-title mb-0">合同模板</h6>
+                      <h6 class="card-title mb-0 data-card-info">合同模板</h6>
                       <div class="dropdown mb-2">
                         <button class="btn p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown"
                           aria-haspopup="true" aria-expanded="false">
@@ -65,7 +65,7 @@
                     </div>
                     <div class="row">
                     <div class="col-6 col-md-12 col-xl-7" style="display: inline;">
-                      <h3 class="mb-2 flex">58
+                      <h3 class="mb-2 flex data-card-data">58
                         <span class="d-flex align-items-baseline" style="font-size: 14px; line-height: 33px;margin-left: 8px;">
                           个
                         </span>
@@ -85,7 +85,7 @@
                 <div class="card">
                   <div class="card-body">
                     <div class="d-flex justify-content-between align-items-baseline">
-                      <h6 class="card-title mb-0">合同风险</h6>
+                      <h6 class="card-title mb-0 data-card-info">合同风险</h6>
                       <div class="dropdown mb-2">
                         <button class="btn p-0" type="button" id="dropdownMenuButton1" data-toggle="dropdown"
                           aria-haspopup="true" aria-expanded="false">
@@ -131,7 +131,7 @@
                 <div class="card">
                   <div class="card-body">
                     <div class="d-flex justify-content-between align-items-baseline">
-                      <h6 class="card-title mb-0">合同诉讼</h6>
+                      <h6 class="card-title mb-0 data-card-info">合同诉讼</h6>
                       <div class="dropdown mb-2">
                         <button class="btn p-0" type="button" id="dropdownMenuButton2" data-toggle="dropdown"
                           aria-haspopup="true" aria-expanded="false">
@@ -177,7 +177,7 @@
                 <div class="card">
                   <div class="card-body">
                     <div class="d-flex justify-content-between align-items-baseline">
-                      <h6 class="card-title mb-0">用印合同</h6>
+                      <h6 class="card-title mb-0 data-card-info">用印合同</h6>
                       <div class="dropdown mb-2">
                         <button class="btn p-0" type="button" id="dropdownMenuButton2" data-toggle="dropdown"
                           aria-haspopup="true" aria-expanded="false">
@@ -226,17 +226,22 @@
         <!-- row -->
         <div class="row">
           <div class="col-sm-6 col-md-4 col-xl-3">
-            <div class="contract-portal-todo contract-portal-element-box" style="height: 835px;">
-              <div class="contract-portal-customList">
-                <div class="contract-portal-customList-title contract-portal-element-title">我的待办</div>
-                <div class="contract-portal-customList-body">
+            <div class="card" style="height: 835px;">
+              <div class="card-head">
+                <img class="tag" src="./assets/images/tag.png" alt="">
+                <div class="card-title-txt my-4">我的待办</div>
+              </div>
+              <div class="card-body p-0">
+                <div class="contract-portal-customList-body mx-30">
                   <div class="contract-portal-customList-content">
                     <div class="contract-portal-todo-item">
                       <div class="contract-portal-todo-item-title">
                         <div class="contract-portal-todo-item-tag">审批</div>
                         <div class="contract-portal-todo-item-name">绿地集团采购合同</div>
                       </div>
-                      <div class="contract-portal-todo-item-type"><span>一般采购合同</span><span
+                      <div class="contract-portal-todo-item-type">
+                        <span>一般采购合同</span>
+                        <span
                           class="contract-portal-element-line"></span><span>JCD-CG-23070162</span></div>
                       <div class="contract-portal-todo-item-user"><span>申请人：</span><span>刘俊【演示账号】</span><span
                           class="contract-portal-element-line"></span><span>今承达——上海</span></div>
@@ -295,31 +300,32 @@
                 </div>
               </div>
             </div>
-            <!-- <div class="card stat-widget" style="height: 835px;">
-                                                                                      <div class="card-body">
-                                                                                        <h5 class="card-title">我的待办</h5>
-                                                                                        <img src="/todo.png" alt="" style="width: 90%;">
-                                                                                        </div>
-                                                                                      </div>
-            </div> -->
           </div>
           <div class="col-xl-6">
-            <div class="card" style="height: 835px;">
+            <div class="card" style="height: 840px;">
+              <div class="card-head">
+                <img class="tag" src="./assets/images/tag.png" alt="">
+                <div class="card-title-txt my-4">法务日历</div>
+              </div>
               <div class="card-body">
-                <h5 class="card-title">法务日历</h5>
                 <div id='calendar'></div>
               </div>
             </div>
           </div>
             <div class="col-xl-3">
               <div class="card stat-widget" id="fast-library-query">
-                <div class="card-body">
-                  <h5 class="card-title">快捷库查询</h5>
-                  <div class="transactions-list inline-flex">
+                <div class="card-head">
+                  <img class="tag" src="./assets/images/tag.png" alt="">
+                  <div class="card-title-txt my-4">快捷库查询</div>
+                </div>
+                <div class="card-body" style="padding-left: 3.3vw;">
+                  <div class="transactions-list inline-flex" style="width: 100%;">
                     <a href="https://weapp.eteams.cn/sp/contract/template-library" target="_blank" rel="noopener noreferrer">
                       <div class="tr-item">
                         <div class="tr-company-name">
-                          <div class="tr-icon tr-card-icon tr-card-bg-secondary text-secondary"><i data-feather="anchor"></i></div>
+                          <div class="tr-icon tr-card-icon tr-card-bg-secondary text-secondary"><img src="./assets/images/mubanku.png" alt=""
+                              style="width: 100%;">
+                          </div>
                           <div class="tr-text">
                             <h4>模板库</h4>
                       <!-- <p>模板库描述</p> -->
@@ -331,7 +337,9 @@
                         <div class="tr-item">
                           <div class="tr-company-name">
                             <!-- tr-card-bg-secondary -->
-                            <div class="tr-icon tr-card-icon tr-card-bg-secondary text-secondary"><i data-feather="user"></i></div>
+                            <div class="tr-icon tr-card-icon tr-card-bg-secondary text-secondary"><img src="./assets/images/tiaokuanku.png" alt=""
+                                style="width: 100%;">
+                            </div>
                             <div class="tr-text">
                               <h4>条款库</h4>
                               <!-- <p>条款库描述</p> -->
@@ -339,129 +347,148 @@
                               </div>
                         </div>
                     </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                      <div class="tr-item">
+                        <div class="tr-company-name">
+                        <div class="tr-icon tr-card-icon tr-card-bg-secondary text-secondary"><img src="./assets/images/panliku.png" alt=""
+                            style="width: 100%;">
+                        </div>
+                        <div class="tr-text">
+                          <h4>判例库</h4>
+                        </div>
+                      </div>
+                      </div>
+                    </a>
+                    </div>
+                    <div class="transactions-list inline-flex" style="margin-bottom: 10px;">
+                      <a href="#" target="_blank" rel="noopener noreferrer">
+                        <div class="tr-item">
+                          <div class="tr-company-name">
+                            <div class="tr-icon tr-card-icon tr-card-bg-secondary text-secondary"><img src="./assets/images/faguiku.png" alt=""
+                                style="width: 100%;">
+                            </div>
+                            <div class="tr-text">
+                              <h4>法规库</h4>
+                            </div>
+                            </div>
+                        </div>
+                      </a>
+                      <a href="#" target="_blank" rel="noopener noreferrer">
+                        <div class="tr-item">
+                          <div class="tr-company-name">
+                            <div class="tr-icon tr-card-icon tr-card-bg-secondary text-secondary"><img src="./assets/images/zhengzhaoku.png" alt=""
+                                style="width: 100%;">
+                            </div>
+                            <div class="tr-text">
+                              <h4>证照库</h4>
+                            </div>
+                            </div>
+                        </div>
+                      </a>
+                      <a href="#" target="_blank" rel="noopener noreferrer">
+                        <div class="tr-item">
+                          <div class="tr-company-name">
+                            <div class="tr-icon tr-card-icon tr-card-bg-secondary text-secondary"><img src="./assets/images/shangbiaoku.png" alt=""
+                                style="width: 100%;">
+                            </div>
+                            <div class="tr-text">
+                              <h4>商标库</h4>
+                            </div>
+                            </div>
+                        </div>
+                      </a>
 
-                        </div>
-                        <div class="transactions-list inline-flex">
-                          <div class="tr-item">
-                            <div class="tr-company-name">
-                        <div class="tr-icon tr-card-icon tr-card-bg-secondary text-secondary"><i data-feather="aperture"></i></div>
-                        <div class="tr-text"><a href="#">
-                            <h4>判例库</h4>
-                          </a>
-                          <!-- <p>判例库描述</p> -->
-                        </div>
-                        </div>
-                        </div>
-                        <div class="tr-item">
-                          <div class="tr-company-name">
-                        <div class="tr-icon tr-card-icon tr-card-bg-secondary text-secondary"><i data-feather="alert-circle"></i></div>
-                        <div class="tr-text"><a href="#">
-                            <h4>法规库</h4>
-                          </a>
-                          <!-- <p>法规库描述</p> -->
-                        </div>
-                        </div>
-                        </div>
-                        </div>
-                        <div class="transactions-list inline-flex">
-                          <div class="tr-item">
-                            <div class="tr-company-name">
-                        <div class="tr-icon tr-card-icon tr-card-bg-secondary text-secondary"><i data-feather="user"></i></div>
-                        <div class="tr-text"><a href="#">
-                            <h4>证照库</h4>
-                          </a>
-                          <!-- <p>证照库描述</p> -->
-                        </div>
-                        </div>
-                        </div>
-                        <div class="tr-item">
-                          <div class="tr-company-name">
-                        <div class="tr-icon tr-card-icon tr-card-bg-secondary text-secondary"><i data-feather="activity"></i></div>
-                        <div class="tr-text"><a href="#">
-                            <h4>商标库</h4>
-                          </a>
-                          <!-- <p>商标库描述</p> -->
-                        </div>
-                        </div>
-                        </div>
-                        </div>
-                        </div>
-                        </div>
-                        <div class="card stat-widget">
+                      </div>
+                      </div>
+                      </div>
+                        <div class="card stat-widget law-issue">
+                          <div class="card-head">
+                            <img class="tag" src="./assets/images/tag.png" alt="">
+                            <div class="card-title-txt my-4">法务事项提醒</div>
+                          </div>
                           <div class="card-body">
-                            <h5 class="card-title">法务事项提醒</h5>
                             <div class="transactions-list">
                               <div class="tr-item">
                                 <div class="tr-company-name">
-                                  <div class="tr-icon tr-card-icon tr-card-bg-primary text-primary"><i data-feather="thumbs-up"></i>
+                                  <div class="tr-icon tr-card-icon tr-card-bg-secondary text-secondary"><img src="./assets/images/zhoubao.png" alt=""
+                                      style="width: 100%;">
                                   </div>
                                   <div class="tr-text">
-                                    <h4>周报</h4>
-                                    <p>刘俊2023年7月第一周工作周报</p>
+                                    <h4>周报提醒</h4>
+                                    <p>刘俊2023年7月第一周工作周报未提交</p>
                                   </div>
                                 </div>
-                      <!-- <div class="tr-rate">
-                                                                                                                                                            <p><span class="text-success">正常</span></p>
-                      </div> -->
-                      </div>
-                      </div>
-                      <div class="transactions-list">
-                        <div class="tr-item">
-                          <div class="tr-company-name">
-                            <div class="tr-icon tr-card-icon tr-card-bg-success text-success"><i data-feather="credit-card"></i></div>
-                            <div class="tr-text">
-                              <h4>模板</h4>
-                              <p>采购类合同模板审查</p>
-                            </div>
-                            </div>
-                      <!-- <div class="tr-rate">
-                                                                                                                                                            <p><span class="text-success">正常</span></p>
-                      </div> -->
-                      </div>
-                      </div>
-                      <div class="transactions-list">
-                        <div class="tr-item">
-                          <div class="tr-company-name">
-                            <div class="tr-icon tr-card-icon tr-card-bg-danger text-danger"><i data-feather="tv"></i></div>
-                            <div class="tr-text">
-                              <h4>活动</h4>
-                              <p>维森集团上海分公司借贷咨询合同</p>
-                            </div>
-                          </div>
-                      <!-- <div class="tr-rate">
-                                                                                                                                                            <p><span class="text-danger">紧急</span></p>
-                      </div> -->
-                      </div>
-                      </div>
-                      <div class="transactions-list">
-                        <div class="tr-item">
-                          <div class="tr-company-name">
-                            <div class="tr-icon tr-card-icon tr-card-bg-warning text-warning"><i data-feather="shopping-cart"></i></div>
-                            <div class="tr-text">
-                              <h4>开庭</h4>
-                              <p>借贷咨询纠纷案件10月2日开庭</p>
-                            </div>
-                            </div>
-                      <!-- <div class="tr-rate">
-                                                                                                                                                            <p><span class="text-danger">紧急</span></p>
-                      </div> -->
-                      </div>
-                      </div>
-                      <div class="transactions-list">
-                        <div class="tr-item">
-                          <div class="tr-company-name">
-                            <div class="tr-icon tr-card-icon tr-card-bg-info text-info"><i data-feather="dollar-sign"></i>
-                            </div>
-                            <div class="tr-text">
-                              <h4>证照</h4>
-                              <p>泛微今承达产品著作权到期</p>
-                            </div>
-                          </div>
-                      <!-- <div class="tr-rate">
-                                                                                                                                                            <p><span class="text-success">正常</span></p>
-                      </div> -->
-                      </div>
-                      </div>
+                                <div class="tr-rate">
+                                  <p>
+                                    <span class="text-black">8</span>
+                                  </p>
+                                </div>
+                                </div>
+                                </div>
+                                <div class="transactions-list">
+                                  <div class="tr-item">
+                                    <div class="tr-company-name">
+                                      <div class="tr-icon tr-card-icon tr-card-bg-secondary text-secondary"><img src="./assets/images/muban.png" alt=""
+                                          style="width: 100%;">
+                                      </div>
+                                      <div class="tr-text">
+                                        <h4>模板提醒</h4>
+                                        <p>采购类合同模板审查未通过</p>
+                                        </div>
+                                        </div>
+                                      <div class="tr-rate">
+                                        <p><span class="text-black">6</span></p>
+                                      </div>
+                                      </div>
+                                      </div>
+                                      <div class="transactions-list">
+                                        <div class="tr-item">
+                                          <div class="tr-company-name">
+                                          <div class="tr-icon tr-card-icon tr-card-bg-secondary text-secondary"><img src="./assets/images/huodong.png" alt=""
+                                              style="width: 100%;">
+                                          </div>
+                                          <div class="tr-text">
+                                        <h4>活动提醒</h4>
+                                        <p>维森集团上海分公司借贷咨询合同</p>
+                                        </div>
+                                        </div>
+                                        <div class="tr-rate">
+                                          <p><span class="text-black">3</span></p>
+                                        </div>
+                                        </div>
+                                        </div>
+                                        <div class="transactions-list">
+                                          <div class="tr-item">
+                                            <div class="tr-company-name">
+                                      <div class="tr-icon tr-card-icon tr-card-bg-secondary text-secondary"><img src="./assets/images/kaiting.png" alt=""
+                                          style="width: 100%;">
+                                      </div>
+                                      <div class="tr-text">
+                                        <h4>开庭</h4>
+                                        <p>借贷咨询纠纷案件10月2日开庭</p>
+                                      </div>
+                                      </div>
+                                        <div class="tr-rate">
+                                          <p><span class="text-black">1</span></p>
+                                        </div>
+                                        </div>
+                                        </div>
+                                        <div class="transactions-list">
+                                          <div class="tr-item">
+                                            <div class="tr-company-name">
+                                      <div class="tr-icon tr-card-icon tr-card-bg-secondary text-secondary"><img src="./assets/images/zhengzhao.png" alt=""
+                                          style="width: 100%;">
+                                      </div>
+                                      <div class="tr-text">
+                                        <h4>证照</h4>
+                                        <p>泛微今承达产品著作权到期</p>
+                                      </div>
+                                      </div>
+                                        <div class="tr-rate">
+                                          <p><span class="text-black">8</span></p>
+                                        </div>
+                                        </div>
+                                        </div>
                       </div>
                       </div>
                       </div>
@@ -534,8 +561,11 @@
         <div class="row" style="padding-left: 30px">
           <div class="col-md-12 col-lg-8 col-xl-12">
             <div class="card table-widget" style="height: 500px;">
-              <div class="card-body">
-                <h5 class="card-title">纠纷诉讼</h5>
+              <div class="card-head">
+                <img class="tag" src="./assets/images/tag.png" alt="">
+                <div class="card-title-txt my-4">纠纷诉讼</div>
+              </div>
+              <div class="card-body" style="padding: 0;">
                 <div class="table-responsive">
                   <table class="table">
                     <thead>
@@ -614,8 +644,11 @@
         <div class="row" style="padding-left: 30px;">
           <div class="col-md-12 col-xl-7">
             <div class="card table-widget" style="height: 55vh;">
-              <div class="card-body">
-                <h5 class="card-title">律师查询</h5>
+              <div class="card-head">
+                <img class="tag" src="./assets/images/tag.png" alt="">
+                <div class="card-title-txt my-4">律师查询</div>
+              </div>
+              <div class="card-body" style="padding: 0;">
                 <div class="table-responsive">
                   <table class="table">
                     <thead>
@@ -683,8 +716,11 @@
           </div>
           <div class="col-md-12 col-xl-5">
             <div class="card table-widget" style="height: 55vh;">
-              <div class="card-body">
-                <h5 class="card-title">合同模板</h5>
+              <div class="card-head">
+                <img class="tag" src="./assets/images/tag.png" alt="">
+                <div class="card-title-txt my-4">合同模板</div>
+              </div>
+              <div class="card-body" style="padding: 0;">
                 <div class="table-responsive">
                   <table class="table">
                     <thead>
@@ -727,7 +763,7 @@
                       </tr>
                       <tr>
                         <td scope="row"><img src="../../assets/file.svg" alt="" style="width: 20px;">软件许可模板</td>
-                        <td>E部门</td>
+                        <td>软件部</td>
                         <td>在线生成</td>
                         <td>22.9.31</td>
                         <td><span class="badge bg-danger">停用</span></td>
@@ -749,15 +785,17 @@
         <div class="row" style="padding-left: 30px;">
           <div class="col-md-12 col-xl-7">
             <div class="card table-widget" style="height: 48vh">
-              <div class="card-body">
-                <h5 class="card-title">风险识别</h5>
+              <div class="card-head">
+                <img class="tag" src="./assets/images/tag.png" alt="">
+                <div class="card-title-txt my-4">风险识别</div>
+              </div>
+              <div class="card-body" style="padding: 0;">
                 <div class="table-responsive">
                   <table class="table">
                     <thead>
                       <tr>
                         <th scope="col">编号</th>
                         <th scope="col">规则</th>
-                        <th scope="col">规则组</th>
                         <th scope="col">合同</th>
                         <th scope="col">阶段</th>
                         <th scope="col">类别</th>
@@ -768,7 +806,6 @@
                       <tr>
                         <td>#53327</td>
                         <td>字符串</td>
-                        <td>组1</td>
                         <td>维森集团采购合同</td>
                         <td><span class="badge bg-primary">起草</span></td>
                         <td><span class="badge bg-info">资信变动</span></td>
@@ -777,7 +814,6 @@
                       <tr>
                         <td>#13328</td>
                         <td>清单</td>
-                        <td>组2</td>
                         <td>维森集团销售合同</td>
                         <td><span class="badge bg-primary">起草</span></td>
                         <td><span class="badge bg-success">管理风险</span></td>
@@ -786,7 +822,6 @@
                       <tr>
                         <td>#35313</td>
                         <td>字符串</td>
-                        <td>组3</td>
                         <td>维森集团采购合同</td>
                         <td><span class="badge bg-success">履约</span></td>
                         <td><span class="badge bg-danger">业务风险</span></td>
@@ -795,7 +830,6 @@
                       <tr>
                         <td>#73423</td>
                         <td>清单</td>
-                        <td>组4</td>
                         <td>维森集团销售合同</td>
                         <td><span class="badge bg-success">履约</span></td>
                         <td><span class="badge bg-primary">财务风险</span></td>
@@ -804,7 +838,6 @@
                       <tr>
                         <td>#54773</td>
                         <td>字符串</td>
-                        <td>组5</td>
                         <td>维森集团采购合同</td>
                         <td><span class="badge bg-success">履约</span></td>
                         <td><span class="badge bg-success">管理风险</span></td>
@@ -818,8 +851,11 @@
           </div>
           <div class="col-md-12 col-xl-5">
             <div class="card table-widget" style="height: 48vh">
-              <div class="card-body">
-                <h5 class="card-title">合规审查</h5>
+              <div class="card-head">
+                <img class="tag" src="./assets/images/tag.png" alt="">
+                <div class="card-title-txt my-4">合规审查</div>
+              </div>
+              <div class="card-body" style="padding: 0;">
                 <div class="table-responsive">
                   <table class="table">
                     <thead>
@@ -862,120 +898,6 @@
             </div>
           </div>
         </div>
-        <!-- <div class="row">
-        <div class="col-md-12 col-lg-4">
-          <div class="card"><img src="../../assets/images/card-bg.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <div class="card-meet-header">
-                <div class="card-meet-day">
-                  <h6>WED</h6>
-                  <h3>7</h3>
-                </div>
-                <div class="card-meet-text">
-                  <h6>Developer AMA</h6>
-                  <p>Meet project developers</p>
-                </div>
-              </div>
-              <p class="card-text m-b-md">Lorem ipsum dolor sit amet,consectetur adipiscing elit</p>
-              <a href="#" class="btn btn-info">Join</a><a href="#" class="btn btn-primary">Invite</a></div>
-          </div>
-        </div>
-        <div class="col-sm-12 col-md-4">
-          <div class="card stat-widget">
-            <div class="card-body">
-              <h5 class="card-title">我的待办</h5>
-              <div class="transactions-list">
-                <div class="tr-item">
-                  <div class="tr-company-name">
-                    <div class="tr-icon tr-card-icon tr-card-bg-primary text-primary"><i data-feather="thumbs-up"></i></div>
-                    <div class="tr-text">
-                      <h4>Facebook</h4>
-                      <p>02 March</p>
-                    </div>
-                  </div>
-                  <div class="tr-rate">
-                    <p><span class="text-success">+$24</span></p>
-                  </div>
-                </div>
-              </div>
-              <div class="transactions-list">
-                <div class="tr-item">
-                  <div class="tr-company-name">
-                    <div class="tr-icon tr-card-icon tr-card-bg-success text-success"><i data-feather="credit-card"></i></div>
-                    <div class="tr-text">
-                      <h4>Visa</h4>
-                      <p>02 March</p>
-                    </div>
-                  </div>
-                  <div class="tr-rate">
-                    <p><span class="text-success">+$300</span></p>
-                  </div>
-                </div>
-              </div>
-              <div class="transactions-list">
-                <div class="tr-item">
-                  <div class="tr-company-name">
-                    <div class="tr-icon tr-card-icon tr-card-bg-danger text-danger"><i data-feather="tv"></i></div>
-                    <div class="tr-text">
-                      <h4>Netflix</h4>
-                      <p>02 March</p>
-                    </div>
-                  </div>
-                  <div class="tr-rate">
-                    <p><span class="text-danger">- $17</span></p>
-                  </div>
-                </div>
-              </div>
-              <div class="transactions-list">
-                <div class="tr-item">
-                  <div class="tr-company-name">
-                    <div class="tr-icon tr-card-icon tr-card-bg-warning text-warning"><i data-feather="shopping-cart"></i></div>
-                    <div class="tr-text">
-                      <h4>Themeforest</h4>
-                      <p>02 March</p>
-                    </div>
-                  </div>
-                  <div class="tr-rate">
-                    <p><span class="text-danger">- $220</span></p>
-                  </div>
-                </div>
-              </div>
-              <div class="transactions-list">
-                <div class="tr-item">
-                  <div class="tr-company-name">
-                    <div class="tr-icon tr-card-icon tr-card-bg-info text-info"><i data-feather="dollar-sign"></i></div>
-                    <div class="tr-text">
-                      <h4>PayPal</h4>
-                      <p>02 March</p>
-                    </div>
-                  </div>
-                  <div class="tr-rate">
-                    <p><span class="text-success">+20%</span></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-6 col-xl-9">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Revenue</h5>
-              <div id="apex1"></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-12 col-lg-4">
-          <div class="card stat-widget">
-            <div class="card-body">
-              <h5 class="card-title">Orders</h5>
-              <div id="apex2"></div>
-            </div>
-          </div>
-        </div>
-      </div> -->
       </div>
     </div>
   </div>
