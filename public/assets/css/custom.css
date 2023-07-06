@@ -1,6 +1,7 @@
 /* Write your custom CSS here */
 * {
   --primary: #5D9CEC;
+  font-family: Microsoft YaHei;
 }
 
 .page-container {
@@ -56,9 +57,11 @@
   line-height: 18px;
 }
 .contract-portal-todo-item-name {
-  font-weight: bold;
-  color: var(--main-fc);
   font-size: 14px;
+  color: var(--unnamed, #1C2533);
+  text-overflow: ellipsis;
+  font-size: 15px;
+  font-weight: 700;
 }
 .contract-portal-todo-item-date {
   display: flex;
@@ -160,12 +163,6 @@
 .contract-portal-progress-item-title {
   color: #7F7F7F;
   font-size: 12px;
-}
-.contract-portal-progress-item-type {
-  color: var(--primary);
-  font-size: 14px;
-  font-weight: bold;
-  margin-right: 12px;
 }
 .contract-portal-progress-item-name,
 .contract-portal-progress-item-number,
@@ -296,11 +293,13 @@
   background-color: white;
   padding: 37px;
 }
-.contract-portal-element-title {
-  border-left: 4px solid var(--primary);
-  font-weight: bold;
+.card-title-txt {
+  font-family: Microsoft YaHei;
+  font-style: normal;
+  font-weight: 700;
   font-size: 16px;
-  padding-left: 6px;
+  color: #000;
+  padding-left: 16px;
   line-height: 20px;
 }
 .contract-portal-element-line {
@@ -328,11 +327,9 @@
 }
 .contract-portal-customList-content {
   height: 800px;
-  width: calc(132%);
-  margin-left: -16px;
-  padding: 0 16px;
   overflow: auto;
   position: relative;
+  margin-top: 16px;
 }
 .contract-portal-customList .ui-pagination {
   display: flex;
@@ -375,4 +372,82 @@
 
 .ui-icon-xxs {
   display: none;
+}
+
+/**2023-07-06**/
+
+thead tr {
+  background: #F6F9FF;
+  color: #95a6c3;
+}
+
+.data-card-info {
+  color: #5C6573;
+  font-family: Microsoft YaHei;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.mx-30 {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.card-head {
+  border-bottom: 1.5px solid #E7EAEE;
+  display: inline-flex;
+  padding-left: 30px;
+}
+
+.tag {
+  width: 11px !important;
+  height: 45px;
+  padding-top: 18px;
+}
+
+.contract-portal-todo-item-user,.contract-portal-todo-item-amount,.contract-portal-todo-item-date {
+  line-height: 25px;
+  font-size: 14px;
+}
+
+.contract-portal-todo-item-type {
+  font-size: 12px;
+  font-weight: bold;
+  margin-right: 12px;
+  color: #979BA0;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.tr-company-name {
+  display: block;
+}
+
+.inline-flex .tr-text {
+  width: 68px;
+  margin-top: 10px;
+  margin-left: 4px;
+}
+
+.transactions-list a {
+  width: 7vw;
+}
+
+.tr-item h4 {
+  color: #787878 !important;
+}
+
+.law-issue .tr-company-name{
+  display: flex;
+}
+
+.text-black {
+  color: #000 !important;
+  font-weight: 700;
 }
